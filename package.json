@@ -9,10 +9,14 @@
     "dev": "shopify app dev",
     "info": "shopify app info",
     "generate": "shopify app generate",
-    "deploy": "shopify app deploy"
+    "deploy": "shopify app deploy",
+    "start": "shopify app start"
   },
   "dependencies": {
-    "@shopify/shopify-api": "^7.7.0"
+    "@shopify/shopify-api": "^7.7.0",
+    "glob": "^11.0.0",
+    "inflight": "^1.0.6",
+    "rimraf": "^6.0.1"
   },
   "author": "rohit",
   "private": true,
@@ -20,5 +24,8 @@
     "extensions/*",
     "web",
     "web/frontend"
-  ]
+  ],
+  "engines": {
+    "node": ">=16.x"
+  }
 }
