@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ada98cffcc0be29b301356162a9a866a"
+name = "cart-nex"
+handle = "cart-nex"
+application_url = "https://footwear-medicine-maps-trim.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-f2e02e15.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://footwear-medicine-maps-trim.trycloudflare.com/auth/callback",
+  "https://footwear-medicine-maps-trim.trycloudflare.com/auth/shopify/callback",
+  "https://footwear-medicine-maps-trim.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
