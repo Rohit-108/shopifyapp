@@ -3,7 +3,7 @@
 client_id = "ada98cffcc0be29b301356162a9a866a"
 name = "cart-nex"
 handle = "cart-nex"
-application_url = "https://dispatched-offerings-authorities-blvd.trycloudflare.com"
+application_url = "https://shopifyapp-frontend.vercel.app/"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_orders,read_products,write_products"
 
 [auth]
 redirect_urls = [
-  "https://dispatched-offerings-authorities-blvd.trycloudflare.com/auth/callback",
-  "https://dispatched-offerings-authorities-blvd.trycloudflare.com/auth/shopify/callback",
-  "https://dispatched-offerings-authorities-blvd.trycloudflare.com/api/auth/callback"
+  "https://shopifyapp-frontend.vercel.app//auth/callback",
+  "https://shopifyapp-frontend.vercel.app//auth/shopify/callback",
+  "https://shopifyapp-frontend.vercel.app//api/auth/callback"
 ]
 
 [webhooks]
